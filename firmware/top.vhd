@@ -169,24 +169,10 @@ gen_iddr2:
 	adcData2(11 downto 0) <= P0buf1 when falling_edge(adcClk);
 	adcData2(23 downto 12) <= P0buf2 when falling_edge(adcClk);
 	adcData1 <= adcData2 when rising_edge(adcClk);
-	adcfifo: entity dcfifo generic map(24,4) port map(sampClk,adcClk,
-		open,'1',adcData,open,
-		'1',open,adcData1,open);
 	
-	-- filter
-	coreClk2 <= not coreClk2 when rising_edge(coreClk);
-	coreClk4 <= not coreClk4 when rising_edge(coreClk2);
-	coreClk8 <= not coreClk8 when rising_edge(coreClk4);
+	sdr4ptxdat <= std_logic_vector(adcData1);
 	
-	inI <= signed(adcData(11 downto 0)) when rising_edge(sampClk);
-	inQ <= signed(adcData(23 downto 12)) when rising_edge(sampClk);
-	filtI: entity fm_filter port map(sampClk,coreClk,coreClk2,coreClk4,coreClk8, inI, filteredI);
-	filtQ: entity fm_filter port map(sampClk,coreClk,coreClk2,coreClk4,coreClk8, inQ, filteredQ);
-	sdr4ptxdat(11 downto 0) <= std_logic_vector(filteredI(filteredI'left downto filteredI'left-11)) when rising_edge(sampClk);
-	sdr4ptxdat(23 downto 12) <= std_logic_vector(filteredQ(filteredQ'left downto filteredQ'left-11)) when rising_edge(sampClk);
-	
-	
-	fifo3: entity dcfifo generic map(24,8) port map(usbclk,sampClk,
+	fifo3: entity dcfifo generic map(24,8) port map(usbclk,adcClk,
 		sdr4prxval,sdr4prxrdy,sdr4prxdat,open,
 		'1',open,sdr4ptxdat,open);
 	
