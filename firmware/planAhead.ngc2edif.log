@@ -1,0 +1,76 @@
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus rxdat[7 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus sdr4ptxdat[23 : 11] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gpioValueNext[7 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gpioValueNext[7]_dff_1[7 : 0] on block
+   top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   usbdev/usb_serial_inst/Madd_descrom_start[9]_GND_32_o_add_167_OUT_lut[7 : 1]
+   on block top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus usbdev/usb_serial_inst/s[8 : 4] on block
+   top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   usbdev/usb_serial_inst/usb_transact_inst/s_state[3]_X_26_o_wide_mux_106_OUT[3
+   : 0] on block top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   usbdev/usb_serial_inst/usb_transact_inst/s_sendpid[3 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus fifo2/wrRposNext[10 : 0] on block top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus fifo2/rdWposNext[10 : 0] on block top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus sdr4p/Result[9 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 112456 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design top.ngc ...
+WARNING:NetListWriters:298 - No output is written to top.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus rxdat[7 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus sdr4ptxdat[23 : 11] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gpioValueNext[7 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus gpioValueNext[7]_dff_1[7 : 0] on block
+   top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   usbdev/usb_serial_inst/Madd_descrom_start[9]_GND_32_o_add_167_OUT_lut[7 : 1]
+   on block top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus usbdev/usb_serial_inst/s[8 : 4] on block
+   top is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   usbdev/usb_serial_inst/usb_transact_inst/s_state[3]_X_26_o_wide_mux_106_OUT[3
+   : 0] on block top is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   usbdev/usb_serial_inst/usb_transact_inst/s_sendpid[3 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus fifo2/wrRposNext[10 : 0] on block top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus fifo2/rdWposNext[10 : 0] on block top is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus sdr4p/Result[9 : 0] on block top is not
+   reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file top.edif ...
+ngc2edif: Total memory usage is 112460 kilobytes
+
