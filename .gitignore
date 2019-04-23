@@ -1,0 +1,12 @@
+sdr5.*
+*-
+*-1
+*-2
+*-3
+*.bak*
+*~
+*.net
+*.pcb.txt
+*.sch.txt
+*.backup
+*.bom.csv
