@@ -87,7 +87,7 @@ begin
 	wrRpos <= wrRposNext when rising_edge(wrclk);
 	wrRposM1 <= wrRpos-1 when rising_edge(wrclk);
 	grey_wpos1: entity greycodeEnc generic map(depthOrder)
-		port map(datain=>wrWpos, dataout=>wrWposGrey);
+		port map(datain=>wrWpos1, dataout=>wrWposGrey);
 	grey_wpos2: entity greycodeDec generic map(depthOrder)
 		port map(datain=>rdWposGrey, dataout=>rdWposNext);
 	rdWpos <= rdWposNext when rising_edge(rdclk);
